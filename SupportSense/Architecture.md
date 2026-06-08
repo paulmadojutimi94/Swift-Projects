@@ -1,24 +1,6 @@
-SupportSense/
-├── App/
-│   ├── SupportSenseApp.swift
-│   └── Routing/
-├── Features/
-│   ├── CaseList/
-│   ├── CaseDetail/
-│   ├── Summary/
-│   └── QualityInsights/
-├── Domain/
-│   ├── Models/
-│   ├── UseCases/
-│   └── Protocols/
-├── Data/
-│   ├── Network/
-│   ├── Persistence/
-│   ├── AI/
-│   └── Fixtures/
-├── Shared/
-│   ├── DesignSystem/
-│   ├── Extensions/
-│   └── Utilities/
-├── Tests/
-└── UITests/
+flowchart LR
+A[User question] --> B[Answer provider]
+B --> C[Mock JSON or API layer]
+C --> D[Rank and summarize]
+D --> E[Answer cards]
+E --> F[Feedback capture]
